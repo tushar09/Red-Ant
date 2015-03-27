@@ -1,0 +1,7 @@
+#JSGF V1.0;
+grammar hello2;
+public <number>     = (zero | one | two | three | four | five | six | seven | eight | nine | ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety | hundred | plus | minus | divide | into)*;
+public <weather>    = (weather report | weather condition | the report of weather | the condition of weather | weather | weather report);
+public <control>    = (open | execute)(mouse setting | keyboard setting | color setting);
+public <domainMulti>= (dot com | dot net | dot or g | dot in t | dot a c | dot b d );
+public <sites>      = (y mail dot com | hot mail | Piazza | G mail | Sound cloud | My space | du du | free lancer | o desk | go goal | face book | you tube | we key pi de a | twit t e r | live | amazon | linked in | y a hoo | word press | bing | p interest | ask | m s n | micro soft | apple | im d b | stack over flow | b b c );

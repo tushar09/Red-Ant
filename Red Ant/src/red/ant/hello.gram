@@ -1,0 +1,24 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Hello World example
+ */
+
+grammar hello;
+
+public <cacl>       = <number>;
+public <number>     = (and | zero | one | two | three | four | five | six | seven | eight | nine | ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty | thirty | forty | fifty | sixty | seventy | eighty | ninety | hundred | plus | minus | divide | into | hundred | thousand | million | billion | trillion)*;
+public <command>    = [tell me | show me | give me | report me the weather | tell | show | give ];
+public <weather>    = <command>(weather report | weather condition | the report of weather | the condition of weather | weather | weather report);
+public <control>    = <open> (color setting);
+/**public <countries>  = (Afghanistan | Albania | Algeria | American Samoa | Andorra | Angola | Anguilla | Antarctica | Antigua | Argentina | Armenia | Aruba | Australia | Austria | Azerbaijan | Bahamas | Bahrain | Bangladesh | Barbados | Belarus | Belgium | Belize | Benin | Bermuda | Bhutan | Bolivia | Bosnia and Herzegovina | Botswana | Brazil | Bulgaria | Burkina | Burundi | Cambodia | Cameroon | Canada | Cape Verde | Cayman Islands | Central African Republic | Chad | Chile | China | Christmas Island | Cocos Islands | Colombia | Democratic Republic of the Congo | Congo | Cook Islands | Costa Rica | Ivory Coast | Croatia | Cuba | Cyprus | Czech Republic | English Name | Denmark | Djibouti | Dominica | Dominican Republic | East Timor | Ecuador | Egypt | El Salvador | Equatorial Guinea | Eritrea | Estonia | Ethiopia | Falkland Islands | Fiji | Finland | France | French Guiana | French Polynesia | French Southern Territories Gabon | Gambia | Georgia | Germany | Ghana | Gibraltar | Great Britain | Greece | Greenland | Grenada | Guadeloupe | Guam | Guatemala | Guinea | Guyana | English Name | Haiti | Holy See | Honduras | Hong Kong | Hungary | Iceland | India | Indonesia | Iran | Iraq | Ireland | Israel | Italy | Jamaica | Japan | Jordan | Kenya | Kiribati | Korea Democratic Peoples Republic | Korea Republic of South Korea | Kuwait | Lao Peoples Democratic Republic | Latvia | Lebanon | Lesotho | Liberia | Libya | Liechtenstein | Lithuania | Luxembourg | Macau | Madagascar | Malawi | Malaysia | Maldives | Mali | Malta | Marshall Islands | Martinique | Mauritania | Mauritius | Mayotte | Mexico | Micronesia | Monaco | Mongolia | Montenegro | Morocco | Mozambique | Burma | Nepal | Netherlands | Netherlands Antilles | New Caledonia | New Zealand | Nicaragua | Niger | Nigeria | Northern Mariana Islands | Norway | Oman | Pakistan | Palau | Palestinian territories | Panama | Papua New Guinea | Paraguay | Peru | Philippines | Poland | Portugal | Puerto Rico | Qatar | Reunion Island | Romania | Russian Federation | Rwanda | Saint Kitts and Nevis | Saint Lucia | Samoa | San Marino | Sao Tome and Principe | Saudi Arabia | Senegal | Serbia | Sierra Leone | Singapore | Slovakia | Slovenia | Solomon Islands | Somalia | South Africa | South Sudan | Spain | Sri Lanka | Sudan | Suriname | Swaziland | Sweden | Switzerland | Syria | Taiwan | Tanzania | the United Republic of Tanzania | Thailand | Tibet | Togo | Trinidad and Tobago | Tunisia | Turkey | Uganda | Ukraine | United Arab Emirates | United Kingdom | United States | Uruguay | Vanuatu | Vatican City State | Venezuela | Vietnam | Virgin Islands | Virgin Islands | Western Sahara | Yemen | Zambia | Zimbabwe);*/
+public <open>       = [open | go to | Execute | visit];
+public <domain>     = [dot com | dot net | dot or g | dot in t | dot a c | dot b d ];
+public <domainMulti>= (dot com | dot net | dot or g | dot in t | dot a c | dot b d )*;
+public <greet>      = (Hello | Hi| Hey); 
+public <drives>     = <open> [drive] (a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u | v | w | x | y | z | explorer);
+public <sites>      = <open> (y mail | hot mail | Piazza | G mail | Sound cloud | My space | du du | free lancer | o desk | go goal | face book | you tube | twitter | live | amazon | linked in | word press | bing | p interest | ask | m s n | micro soft | apple | stack overflow | b b c ) <domain>;
+public <sitesMulti> = <open> (y mail | hot mail | Piazza | G mail | Sound cloud | My space | du du | free lancer | o desk | go goal | face book | you tube | twitter | live | amazon | linked in | word press | bing | p interest | ask | m s n | micro soft | apple | stack overflow | b b c ) <domainMulti>;
+public <browser>    = <open> (Fire Fox | chrome | explorer | opera);
+public <task>       = <open> (Control Panel | email | Word Pad | Microsoft Word | Microsoft Excel | Paint | Command Prompt | My Computer | Note pad | calculator | music player);
+public <self>       = (close | terminate | destroy | vanish | dismiss | die | go away) (Red Ant);
